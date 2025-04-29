@@ -1,9 +1,10 @@
 from collections import defaultdict
+from typing import List, Tuple, Dict
 
 from src.log_parser import parse_log_file
 
 
-def generate_report(log_files):
+def generate_report(log_files: List[str]) -> Tuple[Dict[str, Dict[str, int]], int]:
     """Генерирует отчет о состоянии ручек API."""
     overall_data = defaultdict(lambda: {level: 0 for level in ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]})
     total_requests = 0
@@ -19,7 +20,7 @@ def generate_report(log_files):
     return overall_data, total_requests
 
 
-def print_report(report_data, total_requests):
+def print_report(report_data: Dict[str, Dict[str, int]], total_requests: int) -> None:
     """Выводит отчет в консоль."""
     print(f"Всего запросов: {total_requests}\n")
 
