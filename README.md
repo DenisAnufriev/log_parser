@@ -17,8 +17,6 @@ cd django-log-parser
 Рекомендуется использовать виртуальное окружение.
 
 ```bash
-Копировать
-Редактировать
 python -m venv venv
 source venv/bin/activate  # для Windows используйте venv\Scripts\activate
 pip install -r requirements.txt
@@ -28,14 +26,10 @@ pip install -r requirements.txt
 #### Чтобы запустить программу и сгенерировать отчет, используйте следующую команду:
 
 ```bash
-Копировать
-Редактировать
 python main.py <путь_к_лог_файлу_1> <путь_к_лог_файлу_2> ... --report handlers
 ```
 #### Пример:
 ```bash
-Копировать
-Редактировать
 python main.py logs/app1.log logs/app2.log --report handlers
 ```
 bash
