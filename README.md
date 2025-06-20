@@ -32,10 +32,7 @@ python main.py <путь_к_лог_файлу_1> <путь_к_лог_файлу_
 ```bash
 python main.py logs/app1.log logs/app2.log --report handlers
 ```
-bash
-Копировать
-Редактировать
-Total requests: 1000
+
 
 ### Требования
 Python 3.6+
